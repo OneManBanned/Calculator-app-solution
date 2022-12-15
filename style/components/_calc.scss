@@ -1,0 +1,61 @@
+@use '../abstracts/breakpoints' as *;
+@use '../abstracts/typography' as *;
+
+.calc {
+    padding: 1rem;
+    border-radius: .75rem;
+    margin-bottom: 2rem;
+
+    &-screen {
+        width: 22rem;
+        height: 6.25rem;
+        border-radius: .75rem;
+        padding-right: 2.5rem;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: $fs-800;
+        overflow: hidden;
+
+        @include dt {
+            width: 32.25rem;
+            height: 7.25rem;
+            border-radius: .75rem;
+            font-size: 3rem;
+        }
+
+        &-output {
+            height: min-content;
+        }
+    }
+}
+
+button {
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    margin: .75rem .5rem;
+    border: none;
+    border-radius: .25em;
+    padding-top: .75rem;
+
+    @include dt {
+        height: 3.7rem;
+        width: 6rem;
+        margin: .9rem .75rem;
+        border-radius: .5rem;
+        font-size: $fs-800;
+    }
+}
+
+.delete {
+    padding-top: .25rem;
+}
+
+.longBtn {
+    width: 9rem;
+    padding-top: .25rem;
+
+    @include dt {
+        width: 13.5rem;
+    }
+}

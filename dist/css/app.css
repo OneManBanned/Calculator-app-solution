@@ -1,0 +1,353 @@
+.uppercase {
+  text-transform: uppercase;
+}
+
+.fs-800 {
+  font-size: 2.5rem;
+}
+
+.fs-700 {
+  font-size: 2rem;
+}
+
+.fs-500 {
+  font-size: 1.4rem;
+}
+@media (min-width: 376px) {
+  .fs-500 {
+    font-size: 1.7rem;
+  }
+}
+
+.fs-400 {
+  font-size: 0.9rem;
+}
+
+.fs-300 {
+  font-size: 0.65rem;
+}
+
+.dark-theme {
+  background-color: hsl(222deg, 26%, 31%);
+}
+.dark-theme .theme-container,
+.dark-theme h1,
+.dark-theme p {
+  color: hsl(0deg, 0%, 100%);
+}
+.dark-theme .slider-container {
+  background-color: hsl(223deg, 31%, 20%);
+}
+.dark-theme .slider-container > .slider::-webkit-slider-thumb {
+  background-color: hsl(6deg, 63%, 50%);
+}
+.dark-theme .slider-container > .slider::-webkit-slider-thumb:hover {
+  background-color: hsl(6deg, 63%, 65%);
+}
+.dark-theme .calc {
+  background-color: hsl(224deg, 36%, 15%);
+}
+.dark-theme .calc-screen {
+  background-color: hsl(224deg, 36%, 15%);
+  color: hsl(0deg, 0%, 100%);
+}
+.dark-theme button {
+  background-color: hsl(30deg, 25%, 89%);
+  color: hsl(221deg, 14%, 31%);
+  box-shadow: 0px 7px 0px -1px hsl(28deg, 16%, 65%);
+}
+.dark-theme button:hover, .dark-theme button:focus {
+  background-color: hsl(30deg, 25%, 100%);
+}
+.dark-theme .reset,
+.dark-theme .delete {
+  background-color: hsl(225deg, 21%, 49%);
+  color: hsl(0deg, 0%, 100%);
+  box-shadow: 0px 7px 0px -1px hsl(224deg, 28%, 35%);
+}
+.dark-theme .reset:hover, .dark-theme .reset:focus,
+.dark-theme .delete:hover,
+.dark-theme .delete:focus {
+  background-color: hsl(224deg, 60%, 80%);
+}
+.dark-theme .equals {
+  background-color: hsl(6deg, 63%, 50%);
+  color: hsl(0deg, 0%, 100%);
+  box-shadow: 0px 7px 0px -1px hsl(6deg, 70%, 34%);
+}
+.dark-theme .equals:hover, .dark-theme .equals:focus {
+  background-color: hsl(6deg, 77%, 62%);
+}
+
+.light-theme {
+  background-color: hsl(0deg, 0%, 90%);
+}
+.light-theme .theme-container,
+.light-theme h1,
+.light-theme p {
+  color: hsl(60deg, 10%, 19%);
+}
+.light-theme .slider-container {
+  background-color: hsl(0deg, 5%, 81%);
+}
+.light-theme .slider-container > .slider::-webkit-slider-thumb {
+  background-color: hsl(25deg, 98%, 40%);
+}
+.light-theme .slider-container > .slider::-webkit-slider-thumb:hover {
+  background-color: hsl(25deg, 98%, 55%);
+}
+.light-theme .calc {
+  background-color: hsl(0deg, 5%, 81%);
+}
+.light-theme .calc-screen {
+  background-color: hsl(0deg, 0%, 93%);
+  color: hsl(60deg, 10%, 19%);
+}
+.light-theme button {
+  background-color: hsl(45deg, 7%, 89%);
+  color: hsl(60deg, 10%, 19%);
+  box-shadow: 0px 7px 0px -1px hsl(35deg, 11%, 61%);
+}
+.light-theme button:hover, .light-theme button:focus {
+  background-color: hsl(45deg, 7%, 100%);
+}
+.light-theme .reset,
+.light-theme .delete {
+  background-color: hsl(185deg, 42%, 37%);
+  color: hsl(0deg, 0%, 100%);
+  box-shadow: 0px 7px 0px -1px hsl(185deg, 58%, 25%);
+}
+.light-theme .reset:hover, .light-theme .reset:focus,
+.light-theme .delete:hover,
+.light-theme .delete:focus {
+  background-color: hsl(185deg, 46%, 59%);
+}
+.light-theme .equals {
+  background-color: hsl(25deg, 98%, 40%);
+  color: hsl(0deg, 0%, 100%);
+  box-shadow: 0px 7px 0px -1px hsl(25deg, 99%, 27%);
+}
+.light-theme .equals:hover, .light-theme .equals:focus {
+  background-color: hsl(25deg, 98%, 63%);
+}
+
+.color-theme {
+  background-color: hsl(268deg, 75%, 9%);
+}
+.color-theme .theme-container,
+.color-theme h1,
+.color-theme p {
+  color: hsl(52deg, 100%, 62%);
+}
+.color-theme .slider-container {
+  background-color: hsl(268deg, 71%, 12%);
+}
+.color-theme .slider-container > .slider::-webkit-slider-thumb {
+  background-color: hsl(176deg, 100%, 44%);
+}
+.color-theme .slider-container > .slider::-webkit-slider-thumb:hover {
+  background-color: hsl(176deg, 100%, 79%);
+}
+.color-theme .calc {
+  background-color: hsl(268deg, 71%, 12%);
+}
+.color-theme .calc-screen {
+  background-color: hsl(268deg, 71%, 12%);
+  color: hsl(52deg, 100%, 62%);
+}
+.color-theme button {
+  background-color: hsl(268deg, 47%, 21%);
+  color: hsl(52deg, 100%, 62%);
+  box-shadow: 0px 7px 0px -1px hsl(290deg, 70%, 36%);
+}
+.color-theme button:hover, .color-theme button:focus {
+  background-color: hsl(268deg, 38%, 43%);
+}
+.color-theme .reset,
+.color-theme .delete {
+  background-color: hsl(281deg, 89%, 26%);
+  color: hsl(0deg, 0%, 100%);
+  box-shadow: 0px 7px 0px -1px hsl(285deg, 91%, 52%);
+}
+.color-theme .reset:hover, .color-theme .reset:focus,
+.color-theme .delete:hover,
+.color-theme .delete:focus {
+  background-color: hsl(281deg, 63%, 46%);
+}
+.color-theme .equals {
+  background-color: hsl(176deg, 100%, 44%);
+  color: hsl(198deg, 20%, 13%);
+  box-shadow: 0px 7px 0px -1px hsl(177deg, 92%, 70%);
+}
+.color-theme .equals:hover, .color-theme .equals:focus {
+  background-color: hsl(176deg, 84%, 80%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "League Spartan", sans-serif;
+  font-size: 2rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, 2rem);
+}
+
+.container {
+  padding-inline: 2em;
+  margin-inline: auto;
+  max-width: 80rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.theme-container {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+.theme-container-numbers {
+  padding-left: 0.1rem;
+  justify-content: space-between;
+  margin-inline: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+.theme-container > .slider-container {
+  width: 4.25rem;
+  border-radius: 1rem;
+}
+.theme-container > .slider-container > .slider {
+  width: 4.25rem;
+  padding-inline: 0.3rem;
+  -webkit-appearance: none;
+  background-color: transparent;
+}
+.theme-container > .slider-container > .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  -webkit-margin-before: 0.3rem;
+          margin-block-start: 0.3rem;
+  -webkit-margin-after: 0.3rem;
+          margin-block-end: 0.3rem;
+  cursor: pointer;
+}
+
+.calc {
+  padding: 1rem;
+  border-radius: 0.75rem;
+  margin-bottom: 2rem;
+}
+.calc-screen {
+  width: 22rem;
+  height: 6.25rem;
+  border-radius: 0.75rem;
+  padding-right: 2.5rem;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 2.5rem;
+  overflow: hidden;
+}
+@media (min-width: 376px) {
+  .calc-screen {
+    width: 32.25rem;
+    height: 7.25rem;
+    border-radius: 0.75rem;
+    font-size: 3rem;
+  }
+}
+
+button {
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+  margin: 0.75rem 0.5rem;
+  border: none;
+  border-radius: 0.25em;
+  padding-top: 0.75rem;
+}
+@media (min-width: 376px) {
+  button {
+    height: 3.7rem;
+    width: 6rem;
+    margin: 0.9rem 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 2.5rem;
+  }
+}
+
+.delete {
+  padding-top: 0.25rem;
+}
+
+.longBtn {
+  width: 9rem;
+  padding-top: 0.25rem;
+}
+@media (min-width: 376px) {
+  .longBtn {
+    width: 13.5rem;
+  }
+}
+
+.first-section {
+  align-items: flex-end;
+  width: 22rem;
+  padding-bottom: 0.5rem;
+}
+.first-section h1 {
+  margin-right: auto;
+}
+.first-section p {
+  margin-right: 2rem;
+  padding-bottom: 0.25rem;
+  letter-spacing: 0.1rem;
+}
+@media (min-width: 376px) {
+  .first-section {
+    width: 32rem;
+  }
+}/*# sourceMappingURL=app.css.map */

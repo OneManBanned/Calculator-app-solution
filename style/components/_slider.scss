@@ -1,0 +1,32 @@
+.theme-container {
+    width: min-content;
+
+    &-numbers {
+        padding-left: .1rem;
+        justify-content: space-between;
+        margin-inline: .5rem;
+        margin-bottom: .4rem;
+    }
+
+    &>.slider-container {
+        width: 4.25rem;
+        border-radius: 1rem;
+
+        &>.slider {
+            width: 4.25rem;
+            padding-inline: .3rem;
+            -webkit-appearance: none;
+            background-color: transparent;
+
+            &::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                margin-block-start: .3rem;
+                margin-block-end: .3rem;
+                cursor: pointer;
+            }
+        }
+    }
+}

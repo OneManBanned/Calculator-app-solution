@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/app.css">
+    <title>Calculator App</title>
+    <script src="themeToggle.js" defer></script>
+    <script src="calc.js" defer></script>
+    <script src="keypad.js" defer></script>
+</head>
+
+<body class="dark-theme">
+    <main class="container flex flow"
+        style="justify-content: center; padding-top: 2rem; flex-direction: column; align-items: center;">
+
+        <!-- Theme toggle -->
+        <div class="first-section flex">
+            <h1 class="fs-700">calc</h1>
+            <p class="uppercase fs-400">theme</p>
+            <div class="theme-container">
+                <div class="theme-container-numbers flex fs-400" aria-hidden="true">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+                <div class="slider-container flex">
+                    <input type="range" aria-valuemin="1" aria-valuemax="3" value="1" aria-valuenow="1"
+                        aria-valuetext="dark mode" min="1" max="3" class="slider" aria-label="darkModeToggle">
+                </div>
+            </div>
+        </div>
+
+        <!-- Calculator -->
+
+        <!-- Screen -->
+
+        <div class="calc-screen flex">
+            <span id="calc-screen-output" aria-live="off"></span>
+        </div>
+
+        <!-- Calculator -->
+
+        <!-- Keypad -->
+
+        <div class="grid calc" role="grid" aria-label="calculator keypad">
+            <div class="flex" role="row">
+                <button role="gridcell" value="7" data-number tabindex="0">7</button>
+                <button role="gridcell" value="8" data-number tabindex="-1">8</button>
+                <button role="gridcell" value="9" data-number tabindex="-1">9</button>
+                <button role="gridcell" value="delete" class="delete" tabindex="-1"><span
+                        class="sr-only">delete</span><span aria-hidden="true"
+                        class="uppercase fs-500">del</span></button>
+            </div>
+            <div class="flex" role="row">
+                <button role="gridcell" value="4" data-number tabindex="-1">4</button>
+                <button role="gridcell" value="5" data-number tabindex="-1">5</button>
+                <button role="gridcell" value="6" data-number tabindex="-1">6</button>
+                <button role="gridcell" value="+" data-equation tabindex="-1">+</button>
+            </div>
+            <div class="flex" role="row">
+                <button role="gridcell" value="1" data-number tabindex="-1">1</button>
+                <button role="gridcell" value="2" data-number tabindex="-1">2</button>
+                <button role="gridcell" value="3" data-number tabindex="-1">3</button>
+                <button role="gridcell" value="-" data-equation tabindex="-1"><span class="sr-only">minus</span>
+                    <span aria-hidden="true">-</span></button>
+            </div>
+            <div class="flex" role="row">
+                <button role="gridcell" value="." tabindex="-1">.</button>
+                <button role="gridcell" value="0" data-number tabindex="-1">0</button>
+                <button role="gridcell" value="/" data-equation tabindex="-1"><span class="sr-only">divide</span><span
+                        aria-hidden="true">/</span></button>
+                <button role="gridcell" tabindex="-1" data-equation value="*"><span class="sr-only">multiply</span><span
+                        aria-hidden="true">x</span></button>
+            </div>
+            <div class="flex" role="row">
+                <button class="longBtn reset uppercase fs-500" value="reset" role="gridcell"
+                    tabindex="-1">reset</button>
+                <button class="longBtn equals fs-500" role="gridcell" value="equals" tabindex="-1">=</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

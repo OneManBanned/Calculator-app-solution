@@ -1,0 +1,219 @@
+@use '../abstracts/colors' as *;
+
+// Themes
+
+// dark-theme line 9
+// light-theme line 80
+// color-theme line 150
+
+.dark-theme {
+    background-color: $clr-dark-bg;
+
+    .theme-container,
+    h1,
+    p {
+        color: $clr-dark-light-text;
+    }
+
+    .slider-container {
+        background-color: $clr-dark-toggle;
+
+        &>.slider {
+            &::-webkit-slider-thumb {
+                background-color: $clr-dark-accent-bg;
+
+                &:hover {
+                    background-color: hsl(6, 63%, 65%);
+                }
+            }
+        }
+    }
+
+    .calc {
+        background-color: $clr-dark-screen;
+
+        &-screen {
+            background-color: $clr-dark-screen;
+            color: $clr-dark-light-text;
+        }
+    }
+
+    button {
+
+        background-color: $clr-dark-primary-bg;
+        color: $clr-dark-dark-text;
+        box-shadow:
+            0px 7px 0px -1px $clr-dark-primary-shadow;
+
+        &:hover,
+        &:focus {
+            background-color: hsl(30, 25%, 100%);
+        }
+    }
+
+    .reset,
+    .delete {
+        background-color: $clr-dark-secondary-bg;
+        color: $clr-dark-light-text;
+        box-shadow:
+            0px 7px 0px -1px $clr-dark-secondary-shadow;
+
+        &:hover,
+        &:focus {
+            background-color: hsl(224, 60%, 80%);
+        }
+    }
+
+    .equals {
+        background-color: $clr-dark-accent-bg;
+        color: $clr-dark-light-text;
+        box-shadow:
+            0px 7px 0px -1px $clr-dark-accent-shadow;
+
+        &:hover,
+        &:focus {
+            background-color: hsl(6, 77%, 62%);
+        }
+    }
+}
+
+.light-theme {
+    background-color: $clr-light-bg;
+
+    .theme-container,
+    h1,
+    p {
+        color: $clr-light-dark-text;
+    }
+
+    .slider-container {
+        background-color: $clr-light-toggle;
+
+        &>.slider {
+            &::-webkit-slider-thumb {
+                background-color: $clr-light-accent-bg;
+
+                &:hover {
+                    background-color: hsl(25, 98%, 55%);
+                }
+            }
+        }
+    }
+
+    .calc {
+        background-color: $clr-light-toggle;
+
+        &-screen {
+            background-color: $clr-light-screen;
+            color: $clr-light-dark-text;
+        }
+    }
+
+    button {
+        background-color: $clr-light-primary-bg;
+        color: $clr-light-dark-text;
+        box-shadow:
+            0px 7px 0px -1px $clr-light-primary-shadow;
+
+        &:hover,
+        &:focus {
+            background-color: hsl(45, 7%, 100%);
+        }
+    }
+
+    .reset,
+    .delete {
+        background-color: $clr-light-secondary-bg;
+        color: $clr-light-light-text;
+        box-shadow:
+            0px 7px 0px -1px $clr-light-secondary-shadow;
+
+        &:hover,
+        &:focus {
+            background-color: hsl(185, 46%, 59%);
+        }
+    }
+
+    .equals {
+        background-color: $clr-light-accent-bg;
+        color: $clr-light-light-text;
+        box-shadow:
+            0px 7px 0px -1px $clr-light-accent-shadow;
+
+        &:hover,
+        &:focus {
+            background-color: hsl(25, 98%, 63%);
+        }
+    }
+}
+
+.color-theme {
+    background-color: $clr-color-bg;
+
+    .theme-container,
+    h1,
+    p {
+        color: $clr-color-dark-text;
+    }
+
+    .slider-container {
+        background-color: $clr-color-screen;
+
+        &>.slider {
+            &::-webkit-slider-thumb {
+                background-color: $clr-color-accent-bg;
+
+                &:hover {
+                    background-color: hsl(176, 100%, 79%);
+                }
+            }
+        }
+    }
+
+    .calc {
+        background-color: $clr-color-screen;
+
+        &-screen {
+            background-color: $clr-color-screen;
+            color: $clr-color-dark-text
+        }
+    }
+
+    button {
+        background-color: $clr-color-primary-bg;
+        color: $clr-color-dark-text;
+        box-shadow:
+            0px 7px 0px -1px $clr-color-primary-shadow ;
+
+        &:hover,
+        &:focus {
+            background-color: hsl(268, 38%, 43%);
+        }
+
+    }
+
+    .reset,
+    .delete {
+        background-color: $clr-color-secondary-bg;
+        color: $clr-color-white-text;
+        box-shadow:
+            0px 7px 0px -1px $clr-color-secondary-shadow ;
+
+        &:hover,
+        &:focus {
+            background-color: hsl(281, 63%, 46%);
+        }
+    }
+
+    .equals {
+        background-color: $clr-color-accent-bg;
+        color: $clr-color-light-text;
+        box-shadow:
+            0px 7px 0px -1px $clr-color-accent-shadow ;
+
+        &:hover,
+        &:focus {
+            background-color: hsl(176, 84%, 80%);
+        }
+    }
+}
