@@ -3,8 +3,8 @@
 // Themes
 
 // dark-theme line 9
-// light-theme line 80
-// color-theme line 150
+// light-theme line 82
+// color-theme line 154
 
 .dark-theme {
     background-color: $clr-dark-bg;
@@ -15,17 +15,19 @@
         color: $clr-dark-light-text;
     }
 
-    .slider-container {
+    .theme-container-input {
         background-color: $clr-dark-toggle;
 
-        &>.slider {
-            &::-webkit-slider-thumb {
-                background-color: $clr-dark-accent-bg;
+        input {
+            background-color: $clr-dark-toggle;
+        }
 
-                &:hover {
-                    background-color: hsl(6, 63%, 65%);
-                }
-            }
+        input:checked {
+            background-color: $clr-dark-accent-bg;
+        }
+
+        input:checked:hover {
+            background-color: hsl(6, 63%, 65%);
         }
     }
 
@@ -86,17 +88,19 @@
         color: $clr-light-dark-text;
     }
 
-    .slider-container {
+    .theme-container-input {
         background-color: $clr-light-toggle;
 
-        &>.slider {
-            &::-webkit-slider-thumb {
-                background-color: $clr-light-accent-bg;
+        input {
+            background-color: $clr-light-toggle;
+        }
 
-                &:hover {
-                    background-color: hsl(25, 98%, 55%);
-                }
-            }
+        input:checked {
+            background-color: $clr-light-accent-bg;
+        }
+
+        input:checked:hover {
+            background-color: hsl(25, 98%, 55%);
         }
     }
 
@@ -150,23 +154,26 @@
 .color-theme {
     background-color: $clr-color-bg;
 
-    .theme-container,
+    .container,
     h1,
     p {
         color: $clr-color-dark-text;
     }
 
-    .slider-container {
+    .theme-container-input {
         background-color: $clr-color-screen;
 
-        &>.slider {
-            &::-webkit-slider-thumb {
-                background-color: $clr-color-accent-bg;
 
-                &:hover {
-                    background-color: hsl(176, 100%, 79%);
-                }
-            }
+        input {
+            background-color: $clr-color-screen;
+        }
+
+        input:checked {
+            background-color: $clr-color-accent-bg;
+        }
+
+        input:checked:hover {
+            background-color: hsl(176, 100%, 79%);
         }
     }
 

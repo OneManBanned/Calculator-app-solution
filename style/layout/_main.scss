@@ -2,7 +2,7 @@
 
 .first-section {
     align-items: flex-end;
-    width: 22rem;
+    width: min(32rem, 90vw);
     padding-bottom: .5rem;
 
     h1 {
@@ -16,6 +16,6 @@
     }
 
     @include dt {
-        width: 32rem;
+        width: min(32rem, 90vw);
     }
 }

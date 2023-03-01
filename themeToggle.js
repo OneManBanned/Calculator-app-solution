@@ -1,28 +1,48 @@
-const slider = document.querySelector('[aria-label="darkModeToggle"]')
+const radioGroup = document.querySelectorAll(('[name=theme]'))
 const body = document.querySelector('body')
 
-// Logic to switch theme and store theme on local storage
+// Default theme if none found in local storage
 
-slider.addEventListener('change', setTheme)
+let theme;
+
+// Theme preference on initial load, in local storage.
+
 window.addEventListener('load', () => {
-    slider.value = localStorage.getItem('prefers-color-scheme')
-    setTheme()
+    theme = localStorage.getItem('prefers-color-scheme')
+    for (const btn of radioGroup) {
+        if (btn.value === theme) {
+            btn.checked = true
+        }
+    }
+    setTheme(theme)
 })
 
-function setTheme() {
-    body.className = '';
-    if (slider.value === '1') {
-        body.classList.add('dark-theme')
-        slider.setAttribute('aria-valuenow', '1')
-        slider.setAttribute('aria-valuetext', 'dark mode')
-    } else if (slider.value === '2') {
-        body.classList.add('light-theme')
-        slider.setAttribute('aria-valuenow', '2')
-        slider.setAttribute('aria-valuetext', 'light mode')
-    } else if (slider.value === '3') {
-        body.classList.add('color-theme')
-        slider.setAttribute('aria-valuenow', '3')
-        slider.setAttribute('aria-valuetext', 'color mode')
+// Set theme on radio button select and store choice in local storage
+
+radioGroup.forEach(btn => addEventListener('click', () => {
+    if (btn.checked) {
+        theme = btn.value
     }
-    localStorage.setItem('prefers-color-scheme', slider.value)
+    setTheme(theme)
+    localStorage.setItem('prefers-color-scheme', theme)
+}))
+
+// Display correct theme
+
+function setTheme(theme) {
+    if (theme === '1') {
+        body.classList.add('dark-theme')
+        body.classList.remove('light-theme')
+        body.classList.remove('color-theme')
+    } else if (theme === '2') {
+        body.classList.add('light-theme')
+        body.classList.remove('dark-theme')
+        body.classList.remove('color-theme')
+    } else if (theme === '3') {
+        body.classList.add('color-theme')
+        body.classList.remove('light-theme')
+        body.classList.remove('dark-theme')
+    }
 }
+
+
