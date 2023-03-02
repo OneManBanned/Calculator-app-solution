@@ -5,6 +5,8 @@ const body = document.querySelector('body')
 
 let theme;
 
+setTheme(theme)
+
 // Theme preference on initial load, in local storage.
 
 window.addEventListener('load', () => {
